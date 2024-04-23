@@ -1,0 +1,39 @@
+{
+  "readmeUrl": "https://raw.githubusercontent.com/sc0rp10n16/sc0rp10n16/main/README.md",
+  "title": "Akshith's OS",
+  "name": "Akshith Mysa",
+  "ascii": "cveinnt",
+  "social": {
+    "github": "sc0rp10n16",
+    "linkedin": "akshithmysa"
+  },
+  "email": "akshithmysa.physics@gmail.com",
+  "ps1_hostname": "my-world",
+  "ps1_username": "you",
+  "repo": "https://github.com/Cveinnt/LiveTerm",
+  "resume_url": "https://drive.google.com/file/d/1q1zC0k26AHQO6Zp8zvnPeXaV7H4fVYdK/view?usp=sharing",
+  "donate_urls": {
+    "paypal": "https://paypal.me/cveinnt",
+    "patreon": "https://patreon.com/cveinnt"
+  },
+  "colors": {
+    "light": {
+      "background": "#FBF1C9",
+      "foreground": "#3C3836",
+      "yellow": "#D79921",
+      "green": "#98971A",
+      "gray": "#7C6F64",
+      "blue": "#458588",
+      "red": "#CA2124"
+    },
+    "dark": {
+      "background": "#0d0f18",
+      "foreground": "#a5b6cf",
+      "yellow": "#ecd3a0",
+      "green": "#90ceaa",
+      "gray": "#cbced3",
+      "blue": "#86aaec",
+      "red": "#dd6777"
+    }
+  }
+}
