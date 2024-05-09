@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 // List of commands that do not require API calls
 
 import * as bin from './index';
@@ -46,13 +47,13 @@ export const resume = async (args: string[]): Promise<string> => {
 };
 
 // Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
-};
+// export const donate = async (args: string[]): Promise<string> => {
+//   return `thank you for your interest. 
+// here are the ways you can support my work:
+// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
+// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
+// `;
+// };
 
 // Contact
 export const email = async (args: string[]): Promise<string> => {
@@ -112,7 +113,7 @@ directories`;
 
 export const cd = async (args: string[]): Promise<string> => {
   return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
@@ -154,8 +155,13 @@ export const banner = (args?: string[]): string => {
                                                                 
 <img style="margin-left: 2em" src=${HeadshotImg.src} width="180px"/>
 </div>
+Hello and welcome! 👋 Here at Akshith's OS, you've entered the portfolio site of Akshith Mysa. 
+With a profound love for Linux 🐧 (BTW I use Arch 😎), I  thoroughly enjoy navigating its terminal environment .
+As a testament to this passion, I've tailored my website to mirror the interface of my terminal environment.
 Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
+Type 'resume' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.resume_url}" target="_blank">here</a></u> for my resume.
+Type 'sumfetch' to display summary about me.
+Type 'github' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/${config.social.github}" target="_blank">here</a></u> for my github profile.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
