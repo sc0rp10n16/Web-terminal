@@ -137,9 +137,9 @@ export const emacs = async (args?: string[]): Promise<string> => {
   return `you know what? just use vscode.`;
 };
 
-export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-  return `Permission denied: with little power comes... no responsibility? `;
+export const call = async (args?: string[]): Promise<string> => {
+  window.open(`tel:${config.phone}`);
+  return `calling ${config.phone}...`;
 };
 
 export const neofetch = async (args?: string[]): Promise<string> => {
@@ -170,6 +170,11 @@ export const neofetch = async (args?: string[]): Promise<string> => {
   </div>
   </div>
   `;
+};
+
+export const sudo = async (args?: string[]): Promise<string> => {
+  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
+  return `Permission denied: with little power comes... no responsibility? `;
 };
 
 // Banner
