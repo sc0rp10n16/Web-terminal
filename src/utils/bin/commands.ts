@@ -5,6 +5,7 @@ import * as bin from './index';
 import config from '../../../config.json';
 
 import HeadshotImg from '../../assets/Headshot.jpg';
+import PochitaImg from '../../assets/pochita.png'
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
@@ -141,6 +142,36 @@ export const sudo = async (args?: string[]): Promise<string> => {
   return `Permission denied: with little power comes... no responsibility? `;
 };
 
+export const neofetch = async (args?: string[]): Promise<string> => {
+  return `
+  <div style="display: inline-flex; align-items: center">
+  <img style="margin-right: 2em" src=${PochitaImg.src} width="180px"/>
+  <div> 
+       ​​ ​コンピューター 
+  ┌──────────────────────────────────────────┐ 
+   <span style="color: #dd6777"> ​ ​​  OS</span> : Arch Linux x86_64 
+   <span style="color:#dd6777"> ​​ ​  Kernel</span> : 6.8.9-arch1-1 
+   <span style="color:#86aaec"> ​​ ​  Packages</span> : 1409 (pacman), 6 (flatpak) 
+   <span style="color:#86aaec"> ​​ ​  Resolution</span> : 2560x1600 
+   <span style="color:#ecd3a0"> ​​ ​  DE</span> : Hyprland 
+   <span style="color:#ecd3a0"> ​​ ​  Terminal</span> : kitty 
+  └──────────────────────────────────────────┘ 
+    
+    ​​ ​​​  : sc0rp10n@archmachine69 
+  ┌──────────────────────────────────────────┐ 
+  <span style="color:#90ceaa">​​  ​  CPU</span> : AMD Ryzen 7 5800H with Radeon Graphics (16) @ 4.463GHz 
+  <span style="color:#90ceaa"> ​​ ​  GPU</span> : NVIDIA GeForce RTX 3060 Mobile / Max-Q 
+  <span style="color:#c296eb"> ​​ ​  GPU Driver</span> : NVIDIA 550.78 
+  <span style="color:#c296eb"> ​​ ​ ﬙ Memory</span> : 868MiB / 15846MiB 
+  └──────────────────────────────────────────┘ 
+    
+   <span style="color:#dd6777">​​ ​​ ​​​​​​​​​​</span> ​<span style="color:#86aaec">​​ ​​ ​​​​​​​​​​</span> <span style="color:#ecd3a0">​​ ​​ ​​​​​​​​​​</span> <span style="color:#90ceaa">​​ ​​ ​​​​​​​​​​</span> <span style="color:#c296eb">​​ ​​ ​​​​​​​​​​</span> <span style="color:#93cee9">​​ ​​ ​​​​​​​​​​</span> <span style="color:#cbced3">​​ ​​ ​​​​​​​​​​</span> <span style="color:#151720">​​ ​​ ​​​​​​​​​​</span> <span style="color:#0d0f18">​​ ​​ ​​​​​​​​​​</span> ​
+
+  </div>
+  </div>
+  `;
+};
+
 // Banner
 export const banner = (args?: string[]): string => {
   return `
@@ -155,6 +186,8 @@ export const banner = (args?: string[]): string => {
                                                                 
 <img style="margin-left: 2em" src=${HeadshotImg.src} width="180px"/>
 </div>
+
+
 Hello and welcome! 👋 Here at Akshith's OS, you've entered the portfolio site of Akshith Mysa. 
 With a profound love for Linux 🐧 (BTW I use Arch 😎), I  thoroughly enjoy navigating its terminal environment .
 As a testament to this passion, I've tailored my website to mirror the interface of my terminal environment.
